@@ -20,3 +20,6 @@ to be the most efficient one!
 
 What is the big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+### Note:
+I drew this graph to help me make sense of it so I went ahead and attached it.
