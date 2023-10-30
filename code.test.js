@@ -10,8 +10,8 @@ eval(fs.readFileSync('code.js')+'');
                             [[1,3],[3,7]],
                             []];
 
-        var Result1 = [[0,0],[1,1],[2,2],[6,6],[9,9],[8,8]];
-        var Result2 = [[1,1],[2,2],[0,0],[4,4],[7,7],[6,6]];
+        var Result1 = [0,1,2,6,9,8];
+        var Result2 = [1,2,0,4,7,6];
 
         test.array(dijkstra(dijkAdjList1, 0)).is(Result1);
         test.array(dijkstra(dijkAdjList1, 2)).is(Result2);
