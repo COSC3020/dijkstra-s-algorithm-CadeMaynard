@@ -7,7 +7,7 @@ function dijkstra(graph, sourceNode) {
     }
     dist[sourceNode][0] = 0;
 
-    while(unmarkedVerticesRemain(dist)) {
+    for(unmarkedVertices = dist.length; unmarkedVertices > 0; unmarkedVertices--) {
         minIndex = 0;
         for(b = 0, min = Infinity; b < dist.length; b++){
             if(dist[b][0] < min && dist[b][1] == -1) {
@@ -23,13 +23,4 @@ function dijkstra(graph, sourceNode) {
         }
     }
     return dist;
-}
-
-function unmarkedVerticesRemain(dist) {
-    vertRemain = false;
-    for(c = 0; c < dist.length && vertRemain == false; c++){
-        if(dist[c][1] == -1)
-            vertRemain = true;
-    }
-    return vertRemain;
 }
