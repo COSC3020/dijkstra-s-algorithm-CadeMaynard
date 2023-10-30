@@ -1,9 +1,7 @@
 function dijkstra(graph, sourceNode) {
     dist = new Array(graph.length);
     for(i = 0; i < dist.length; i++) {
-        dist[i] = new Array([Infinity]);  // Initializes Dist array so all the first values are Infinity, to represent
-                                            // the current shortest distance between this and the root node. Initializes
-                                            // the second variable to -1 as a sentinel value representing an unmarked node.
+        dist[i] = new Array([Infinity]);  // Initializes Dist array so all the values are Arrays of the single number Infinity.
     }
     dist[sourceNode][0] = 0;
 
