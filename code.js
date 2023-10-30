@@ -8,7 +8,7 @@ function dijkstra(graph, sourceNode) {
     for(unmarkedVertices = dist.length; unmarkedVertices > 0; unmarkedVertices--) {
         minIndex = 0;
         for(b = 0, min = Infinity; b < dist.length; b++){
-            if(Array.isArray(dist[b] && dist[b][0] < min) {
+            if(Array.isArray(dist[b]) && dist[b][0] < min) {
                 min = dist[b][0];
                 minIndex = b;
             }
